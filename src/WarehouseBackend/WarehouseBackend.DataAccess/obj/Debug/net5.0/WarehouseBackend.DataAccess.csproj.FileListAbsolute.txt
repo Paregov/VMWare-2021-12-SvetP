@@ -1,0 +1,11 @@
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\bin\Debug\net5.0\WarehouseBackend.DataAccess.deps.json
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\bin\Debug\net5.0\WarehouseBackend.DataAccess.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\bin\Debug\net5.0\ref\WarehouseBackend.DataAccess.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\bin\Debug\net5.0\WarehouseBackend.DataAccess.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.AssemblyInfoInputs.cache
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.AssemblyInfo.cs
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.csproj.CoreCompileInputs.cache
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\ref\WarehouseBackend.DataAccess.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.pdb
