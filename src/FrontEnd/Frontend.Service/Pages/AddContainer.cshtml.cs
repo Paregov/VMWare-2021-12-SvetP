@@ -42,9 +42,11 @@ namespace Frontend.Service.Pages
             }
             catch (Exception e)
             {
+                _logger.LogError(e, "Error adding new container.");
                 return RedirectToPage("Error");
             }
 
+            _logger.LogInformation("New container added.");
             return RedirectToPage("Index");
         }
 

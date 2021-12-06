@@ -14,7 +14,9 @@ namespace WarehouseBackend.Core.Exceptions
             _next = next;
         }
 
-        public async Task InvokeAsync(HttpContext context, ILogger<ExceptionHandlerMiddleware> logger)
+        public async Task InvokeAsync(
+            HttpContext context,
+            ILogger<ExceptionHandlerMiddleware> logger)
         {
             try
             {

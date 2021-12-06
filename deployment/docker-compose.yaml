@@ -6,6 +6,14 @@ services:
       - 5436:5432
     environment:
       - POSTGRES_PASSWORD=Steeltoe789
+  
+  seq:
+    image: datalust/seq
+    restart: unless-stopped
+    ports:
+      - 8082:80
+    environment:
+      - ACCEPT_EULA=Y
 
   warehouse-backend:
     container_name: warehouse-backen
@@ -16,6 +24,7 @@ services:
     - 8081:80
     depends_on:
       - postgresql
+      - seq
   
   
   warehouse-frontend:
@@ -27,3 +36,4 @@ services:
     - 8080:80
     depends_on:
       - warehouse-backend
+      - seq

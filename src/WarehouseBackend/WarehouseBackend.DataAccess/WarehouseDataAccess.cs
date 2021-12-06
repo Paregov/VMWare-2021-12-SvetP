@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using WarehouseBackend.DataAccess.Entities;
 using WarehouseBackend.DataAccess.Entities.Results;
 
@@ -10,9 +11,12 @@ namespace WarehouseBackend.DataAccess
 {
     public class WarehouseDataAccess : IWarehouseDataAccess
     {
-        public WarehouseDataAccess(WarehouseDbContext context)
+        public WarehouseDataAccess(
+            WarehouseDbContext context,
+            ILogger<WarehouseDataAccess> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<ContainerEntity> AddContainerAsync(ContainerEntity container,
@@ -111,5 +115,6 @@ namespace WarehouseBackend.DataAccess
         }
 
         private readonly WarehouseDbContext _context;
+        private readonly ILogger<WarehouseDataAccess> _logger;
     }
 }

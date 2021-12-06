@@ -18,8 +18,8 @@ Frontend service is accessible on http://localhost:8080
 
 Backend service is accessible on http://localhost:8081
 
+View the logs from Seq on http://localhost:8082
 
 
-Note: So far I am using only one supporting service, but will add a second one.
 
-Note: Frontend not  ready. Will continue work on it.
+Supporting services: postgresql, seq

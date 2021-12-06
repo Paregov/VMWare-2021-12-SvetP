@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using WarehouseBackend.Core.AutoMapper;
 using WarehouseBackend.Core.Exceptions;
 using WarehouseBackend.Core.Services;
@@ -52,6 +53,7 @@ namespace WarehouseBackend.Service
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WarehouseBackend v1"));
 
             app.UseCustomExceptionHandler();
+            app.UseSerilogRequestLogging();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
