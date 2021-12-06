@@ -4,6 +4,18 @@ Technical excercise for VMWare interview.
 
 This is a small shipping container manager. You can add shipping containers. Mark them as shipped. List the containers.
 
+
+
+Prerequisites:
+
+- .NET 5
+
+- Visual Studio 2019 or at least the build tools installed 
+
+- Docker Desktop (Windows)
+
+
+
 To build go into the **deployment** directory from PowerShell
 
 ```powershell
