@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 using WarehouseBackend.Core.Exceptions;
 using WarehouseBackend.DataAccess;
 using WarehouseBackend.DataAccess.Entities;
@@ -16,10 +17,12 @@ namespace WarehouseBackend.Core.Services
     {
         public WarehouseService(
             IWarehouseDataAccess dataAccess,
-            IMapper mapper)
+            IMapper mapper,
+            ILogger<WarehouseService> logger)
         {
             _dataAccess = dataAccess;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public async Task<Container> AddContainerAsync(AddContainerRequest request,
@@ -93,5 +96,6 @@ namespace WarehouseBackend.Core.Services
 
         private readonly IWarehouseDataAccess _dataAccess;
         private readonly IMapper _mapper;
+        private readonly ILogger<WarehouseService> _logger;
     }
 }
