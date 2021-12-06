@@ -1,13 +1,10 @@
+using Frontend.Service.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using WarehouseBackend.ApiClient;
 
 namespace Frontend.Service
 {
@@ -23,6 +20,10 @@ namespace Frontend.Service
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // TODO: Need to be in the appsettings.json
+            services.AddSingleton<IWarehouseClient>(
+                new WarehouseClient("http://host.docker.internal:8081"));
+            services.AddTransient<IWarehouseService, WarehouseService>();
             services.AddRazorPages();
         }
 
@@ -42,9 +43,7 @@ namespace Frontend.Service
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -1,0 +1,30 @@
+﻿@page
+@model AddContainerModel
+@{
+    ViewData["Title"] = "Add Container";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Add new container for shipment.</p>
+
+<form method="post">
+	<table class="table table-striped">
+		<tr>
+			<td>ClientId:</td>
+			<td><input type="text" name="clientId"></td>
+		</tr>
+		<tr>
+			<td>Date Expected To Ship:</td>
+			<td><input type="datetime-local" name="dateExpectedToShip"></td>
+		</tr>
+		<tr>
+			<td>Type:</td>
+			<td><input type="text" name="type"></td>
+		</tr>
+		<tr>
+			<td>Notes:</td>
+			<td><input type="text" name="notes"></td>
+		</tr>
+	</table>
+	<input type="submit" class="page-link">
+</form>

@@ -1,11 +1,11 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Flurl;
 using Newtonsoft.Json;
+using WarehouseBackend.Models;
 using WarehouseBackend.Models.ApiRequests;
 using WarehouseBackend.Models.ApiResponses;
 
@@ -45,7 +45,8 @@ namespace WarehouseBackend.ApiClient
         public async Task<ContainerResults> GetContainersAsync(GetContainersRequest request,
             CancellationToken cancellationToken = default)
         {
-            return await GetForResultAsync<ContainerResults>("api/containers", cancellationToken)
+            return await GetForResultAsync<ContainerResults>(
+                    $"api/containers?page={request.Page}&pageSize={request.PageSize}", cancellationToken)
                 .ConfigureAwait(false);
         }
 
@@ -53,7 +54,12 @@ namespace WarehouseBackend.ApiClient
             GetContainersByClientAndShippingDatesRequest request,
             CancellationToken cancellationToken = default)
         {
-            return await GetForResultAsync<ContainerResults>("api/containers/shipped", cancellationToken)
+            var url = $"api/containers/shipped?page={request.Page}&pageSize={request.PageSize}&shipmentDateLow={request.ShipmentDateLow:s}&shipmentDateHigh={request.ShipmentDateHigh:s}";
+            if (!string.IsNullOrEmpty(request.ClientId))
+                url += $"&clientId={request.ClientId}";
+
+            return await GetForResultAsync<ContainerResults>(
+                    url, cancellationToken)
                 .ConfigureAwait(false);
         }
 
