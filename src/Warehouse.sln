@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend.Service", "FrontEnd\Frontend.Service\Frontend.Service.csproj", "{CCD8B041-8FC9-40E0-9499-393513749441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frontend.Service", "FrontEnd\Frontend.Service\Frontend.Service.csproj", "{CCD8B041-8FC9-40E0-9499-393513749441}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{39F270B9-89D2-4C81-9785-8DE338D25289}"
 EndProject
@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WarehouseBackend", "Warehou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseBackend.Service", "WarehouseBackend\WarehouseBackend.Service\WarehouseBackend.Service.csproj", "{AF8F9FF1-FA27-4054-8DBF-C1FFFDEA3C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseBackend.Models", "WarehouseBackend\WarehouseBackend.Models\WarehouseBackend.Models.csproj", "{4FA3F2F6-3487-400D-A739-C674E2E9448E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseBackend.Models", "WarehouseBackend\WarehouseBackend.Models\WarehouseBackend.Models.csproj", "{4FA3F2F6-3487-400D-A739-C674E2E9448E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseBackend.Core", "WarehouseBackend\WarehouseBackend.Core\WarehouseBackend.Core.csproj", "{E3704AF7-8D74-4D08-AE51-09B2329F17B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseBackend.Core", "WarehouseBackend\WarehouseBackend.Core\WarehouseBackend.Core.csproj", "{E3704AF7-8D74-4D08-AE51-09B2329F17B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseBackend.DataAccess", "WarehouseBackend\WarehouseBackend.DataAccess\WarehouseBackend.DataAccess.csproj", "{54D14CED-A793-429F-88B9-A0D1C03F0F3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseBackend.DataAccess", "WarehouseBackend\WarehouseBackend.DataAccess\WarehouseBackend.DataAccess.csproj", "{54D14CED-A793-429F-88B9-A0D1C03F0F3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseBackend.ApiClient", "WarehouseBackend\WarehouseBackend.ApiClient\WarehouseBackend.ApiClient.csproj", "{F36CA37E-5907-4470-8908-4EA6D82E88DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseBackend.ApiClient", "WarehouseBackend\WarehouseBackend.ApiClient\WarehouseBackend.ApiClient.csproj", "{F36CA37E-5907-4470-8908-4EA6D82E88DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseBackend.UnitTests", "WarehouseBackend\WarehouseBackend.UnitTests\WarehouseBackend.UnitTests.csproj", "{A8EC5C61-F53C-480D-98F3-12A8D058E545}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{F36CA37E-5907-4470-8908-4EA6D82E88DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F36CA37E-5907-4470-8908-4EA6D82E88DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F36CA37E-5907-4470-8908-4EA6D82E88DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EC5C61-F53C-480D-98F3-12A8D058E545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EC5C61-F53C-480D-98F3-12A8D058E545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EC5C61-F53C-480D-98F3-12A8D058E545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EC5C61-F53C-480D-98F3-12A8D058E545}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{E3704AF7-8D74-4D08-AE51-09B2329F17B9} = {C491BB41-65E5-4F92-8B15-58A6615F0F1A}
 		{54D14CED-A793-429F-88B9-A0D1C03F0F3D} = {C491BB41-65E5-4F92-8B15-58A6615F0F1A}
 		{F36CA37E-5907-4470-8908-4EA6D82E88DA} = {C491BB41-65E5-4F92-8B15-58A6615F0F1A}
+		{A8EC5C61-F53C-480D-98F3-12A8D058E545} = {C491BB41-65E5-4F92-8B15-58A6615F0F1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE28D83C-FA68-49EF-A95C-4D53D2F395F4}

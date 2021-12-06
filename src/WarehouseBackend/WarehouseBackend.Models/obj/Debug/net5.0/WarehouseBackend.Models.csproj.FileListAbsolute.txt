@@ -2,7 +2,6 @@ D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\bin\Deb
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\bin\Debug\net5.0\WarehouseBackend.Models.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\bin\Debug\net5.0\ref\WarehouseBackend.Models.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\bin\Debug\net5.0\WarehouseBackend.Models.pdb
-D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.csproj.AssemblyReference.cache
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.GeneratedMSBuildEditorConfig.editorconfig
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.AssemblyInfoInputs.cache
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.AssemblyInfo.cs
@@ -10,3 +9,4 @@ D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Deb
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\ref\WarehouseBackend.Models.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Models\obj\Debug\net5.0\WarehouseBackend.Models.csproj.AssemblyReference.cache

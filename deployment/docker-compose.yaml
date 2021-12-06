@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  postgresql:
+    image: steeltoeoss/postgresql
+    ports:
+      - 5436:5432
+    environment:
+      - POSTGRES_PASSWORD=Steeltoe789
+
+  warehouse-backend:
+    container_name: warehouse-backen
+    build:
+      context: ..\src
+      dockerfile: WarehouseBackend\WarehouseBackend.Service\Dockerfile
+    ports:
+    - 8081:80
+    depends_on:
+      - postgresql
+  
+  
+  warehouse-frontend:
+    container_name: warehouse-frontend
+    build:
+      context: ..\src
+      dockerfile: FrontEnd\Frontend.Service\Dockerfile
+    ports:
+    - 8080:80
+    depends_on:
+      - warehouse-backend

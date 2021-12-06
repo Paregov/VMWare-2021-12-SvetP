@@ -10,3 +10,8 @@ D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\obj\Debug
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\obj\Debug\net5.0\WarehouseBackend.Core.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\obj\Debug\net5.0\ref\WarehouseBackend.Core.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\obj\Debug\net5.0\WarehouseBackend.Core.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\bin\Debug\net5.0\WarehouseBackend.DataAccess.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\bin\Debug\net5.0\WarehouseBackend.Models.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\bin\Debug\net5.0\WarehouseBackend.DataAccess.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\bin\Debug\net5.0\WarehouseBackend.Models.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.Core\obj\Debug\net5.0\WarehouseBackend.Core.csproj.CopyComplete

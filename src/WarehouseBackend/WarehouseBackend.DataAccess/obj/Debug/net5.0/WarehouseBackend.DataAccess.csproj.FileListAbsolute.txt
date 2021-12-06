@@ -9,3 +9,4 @@ D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\ref\WarehouseBackend.DataAccess.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.DataAccess\obj\Debug\net5.0\WarehouseBackend.DataAccess.csproj.AssemblyReference.cache

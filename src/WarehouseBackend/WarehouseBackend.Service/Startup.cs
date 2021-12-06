@@ -1,18 +1,16 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using WarehouseBackend.Core.AutoMapper;
+using WarehouseBackend.Core.Exceptions;
+using WarehouseBackend.Core.Services;
+using WarehouseBackend.DataAccess;
 
-namespace WarehouseBackend
+namespace WarehouseBackend.Service
 {
     public class Startup
     {
@@ -26,7 +24,15 @@ namespace WarehouseBackend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<WarehouseDbContext>(
+                // Note: I have tried the Steeltoe library to connect, but it kept giving me errors.
+                // "Cannot assign requested address"
+                // Best practice is to add the connection string into the appsetting.
+                options => options.UseNpgsql(
+                    "Host=host.docker.internal;Port=5436;Database=warehouse;Username=postgres;Password=Steeltoe789;SSL Mode=Prefer;Trust Server Certificate=true"));
+            services.AddTransient<IWarehouseDataAccess, WarehouseDataAccess>();
+            services.AddTransient<IWarehouseService, WarehouseService>();
+            services.AddMapper();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -40,16 +46,15 @@ namespace WarehouseBackend
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WarehouseBackend v1"));
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WarehouseBackend v1"));
+
+            app.UseCustomExceptionHandler();
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

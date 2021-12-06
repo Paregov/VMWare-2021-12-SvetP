@@ -9,3 +9,7 @@ D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\obj\
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\obj\Debug\net5.0\WarehouseBackend.ApiClient.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\obj\Debug\net5.0\ref\WarehouseBackend.ApiClient.dll
 D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\obj\Debug\net5.0\WarehouseBackend.ApiClient.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\obj\Debug\net5.0\WarehouseBackend.ApiClient.csproj.AssemblyReference.cache
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\bin\Debug\net5.0\WarehouseBackend.Models.dll
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\bin\Debug\net5.0\WarehouseBackend.Models.pdb
+D:\git\VMWare-2021-12-SvetP\src\WarehouseBackend\WarehouseBackend.ApiClient\obj\Debug\net5.0\WarehouseBackend.ApiClient.csproj.CopyComplete
